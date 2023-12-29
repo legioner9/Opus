@@ -1,0 +1,5 @@
+## bale.obc possible prop:value of ram_
+## value.lst possible value of ram_
+## {{ram_}}.html example use ram_
+### {{ram_}}_[that].html example use ram_ from [that]
+## {{ram_}}.anc example use ram_
