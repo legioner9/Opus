@@ -16,7 +16,8 @@ echo "# https://yandex.ru/search/?text=${ram_}" >${ram_}.anc
 echo "# ${ram_}.man" >${ram_}.man
 
 touch value.lst
-touch bale.obc
+touch for_tags.lst
+touch with_attr.obc
 mkdir soff_${ram_}
 
 cd soff_${ram_} ||
@@ -27,3 +28,11 @@ cd soff_${ram_} ||
 
 echo '<!-- {{html_min_edu}} -->' >"${ram_}".html
 arb2f_ ${ram_}.html 0
+
+cd ${ram_to_create}/.grot || {
+    plt_exit "EXEC_FAIL: cd file://${ram_to_create}/.grot return 3"
+    return 3
+}
+
+mkdir pdf
+touch pdf/0

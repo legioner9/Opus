@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Title 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .block-example {
+            display: block;
+            background-color: yellow;
+        }
+
+        .inline-example {
+            display: inline;
+            background-color: pink;
+        }
+
+        .inline-block-example {
+            display: inline-block;
+            background-color: lightblue;
+            width: 200px;
+            height: 50px;
+        }
+
+        .hidden-element {
+            display: none;
+        }
+    </style>
+    <script>
+        let a = 0;
+    </script>
+</head>
+
+<body>
+    <h1>Site 1</h1>
+    <div class="block-example">Этот блочный элемент занимает всю ширину.</div>
+
+    <span class="inline-example">Этот строчный элемент занимает только столько места, сколько ему нужно.</span>
+
+    <button class="inline-block-example">Этот элемент имеет значение inline-block, поэтому его содержимое может быть
+        отформатировано как блок и иметь ширину и высоту.</button>
+
+    <div class="hidden-element">Этот элемент имеет значение none, поэтому он не отображается на веб-странице.</div>
+</body>
+
+</html>
+<!-- [[html_min_edu]] -->
